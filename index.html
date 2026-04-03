@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kiwrious — Make Science Visible</title>
+  <meta name="description" content="Kiwrious makes invisible science visible. USB sensors and software tools that connect students to real-world phenomena — from air quality to UV radiation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Kiwrious — Make Science Visible">
+  <meta property="og:description" content="USB sensors and software tools that connect students to real-world phenomena. Born in New Zealand, now based at Augmented Human Lab, NUS Singapore.">
+  <meta property="og:url" content="https://kiwrious.com">
+  <meta property="og:site_name" content="Kiwrious">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kiwrious — Make Science Visible">
+  <meta name="twitter:description" content="USB sensors and software tools that connect students to real-world phenomena.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <meta name="theme-color" content="#005766">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader" aria-hidden="true">
+    <svg viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
+            font-family="DM Sans, sans-serif" font-weight="700" font-size="32" fill="#005766"
+            letter-spacing="1">kiwrious</text>
+    </svg>
+  </div>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-logo">
+        <img src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" width="140" height="32">
+      </a>
+      <div class="nav-links">
+        <a href="#platforms">Tools</a>
+        <a href="#sensors">Sensors</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact" class="btn-demo">Book a Demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="#platforms">Tools</a>
+    <a href="#sensors">Sensors</a>
+    <a href="#story">Our Story</a>
+    <a href="#validation">Track Record</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag"><i class="fa-solid fa-flask"></i> Science Education Technology</span>
+        <h1>
+          <span class="typewriter-text">Inspire Curiosity</span><span class="typewriter-cursor"></span>
+        </h1>
+        <p>Kiwrious makes invisible science visible. USB sensors and open-source software that connect students to real-world phenomena — from air quality to UV radiation.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Book a Demo <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#platforms" class="btn-secondary"><i class="fa-solid fa-compass"></i> Explore Tools</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="img/header_sensors.png" alt="Kiwrious sensor kit" class="hero-sensors-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section class="platforms" id="platforms">
+    <div class="container">
+      <span class="section-label reveal">Our Tools</span>
+      <h2 class="section-title reveal">A complete science learning platform</h2>
+      <p class="section-subtitle reveal">Three integrated tools for measuring, exploring, and building with real-world sensor data.</p>
+      <div class="platform-grid">
+        <a href="https://measure.kiwrious.com" target="_blank" class="platform-card reveal reveal-delay-1">
+          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Measure</h3>
+          <p>Real-time sensor data visualisation. Connect a Kiwrious sensor via USB and see live readings — temperature, heart rate, UV, humidity and more.</p>
+          <span class="card-link">measure.kiwrious.com <i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+        </a>
+        <a href="https://play.kiwrious.com" target="_blank" class="platform-card reveal reveal-delay-2">
+          <div class="card-icon"><i class="fa-solid fa-microscope"></i></div>
+          <h3>Play</h3>
+          <p>Interactive science experiments and guided inquiries. Students explore phenomena, record observations, and share discoveries with classmates.</p>
+          <span class="card-link">play.kiwrious.com <i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+        </a>
+        <a href="https://dev.kiwrious.com" target="_blank" class="platform-card reveal reveal-delay-3">
+          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Dev</h3>
+          <p>Developer tools, WebUSB APIs, and integration guides. Build your own sensor-powered applications on top of the Kiwrious hardware.</p>
+          <span class="card-link">dev.kiwrious.com <i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCIENTIFIC PROCESS -->
+  <section class="process">
+    <div class="container">
+      <span class="section-label reveal">The Kiwrious Approach</span>
+      <h2 class="section-title reveal">Science as a living process</h2>
+      <p class="section-subtitle reveal">Kiwrious guides students through a complete cycle of scientific inquiry — from observation to discussion — using real sensor data.</p>
+      <div class="process-img-wrap reveal">
+        <img src="img/flow_chart.png" alt="Kiwrious scientific inquiry process: observe, ask, measure, interpret, share, discuss" loading="lazy">
+      </div>
+      <div class="process-steps reveal">
+        <span class="process-step"><i class="fa-solid fa-eye"></i> Observe</span>
+        <i class="fa-solid fa-chevron-right process-arrow"></i>
+        <span class="process-step"><i class="fa-solid fa-circle-question"></i> Ask</span>
+        <i class="fa-solid fa-chevron-right process-arrow"></i>
+        <span class="process-step"><i class="fa-solid fa-ruler-combined"></i> Measure</span>
+        <i class="fa-solid fa-chevron-right process-arrow"></i>
+        <span class="process-step"><i class="fa-solid fa-magnifying-glass-chart"></i> Interpret</span>
+        <i class="fa-solid fa-chevron-right process-arrow"></i>
+        <span class="process-step"><i class="fa-solid fa-share-nodes"></i> Share</span>
+        <i class="fa-solid fa-chevron-right process-arrow"></i>
+        <span class="process-step"><i class="fa-solid fa-comments"></i> Discuss</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENSORS -->
+  <section class="sensors" id="sensors">
+    <div class="container">
+      <span class="section-label reveal">The Sensor Kit</span>
+      <h2 class="section-title reveal">Six sensors. Endless experiments.</h2>
+      <p class="section-subtitle reveal">Each USB sensor plugs directly into a laptop or Chromebook — no apps, no drivers. Just open a browser and start measuring.</p>
+      <div class="sensor-showcase reveal">
+        <div class="sensor-card">
+          <div class="sensor-img-wrap"><img src="img/graphics/temperature_sensor.png" alt="Temperature sensor" loading="lazy"></div>
+          <h4 style="color: var(--sensor-temp);">Temperature</h4>
+          <p class="sensor-desc">Measures surface temperature via infrared</p>
+          <span class="sensor-unit-label">Celsius</span>
+        </div>
+        <div class="sensor-card">
+          <div class="sensor-img-wrap"><img src="img/graphics/conductivity_sensor.png" alt="Conductance sensor" loading="lazy"></div>
+          <h4 style="color: var(--sensor-cond);">Conductance</h4>
+          <p class="sensor-desc">Tests electrical conductivity of objects</p>
+          <span class="sensor-unit-label">Siemens</span>
+        </div>
+        <div class="sensor-card">
+          <div class="sensor-img-wrap"><img src="img/graphics/heartrate_sensor.png" alt="Heart rate sensor" loading="lazy"></div>
+          <h4 style="color: var(--sensor-heart);">Heart Rate</h4>
+          <p class="sensor-desc">Non-invasive pulse measurement</p>
+          <span class="sensor-unit-label">BPM</span>
+        </div>
+        <div class="sensor-card">
+          <div class="sensor-img-wrap"><img src="img/graphics/air_sensor.png" alt="Air quality sensor" loading="lazy"></div>
+          <h4 style="color: var(--sensor-air);">Air Quality</h4>
+          <p class="sensor-desc">Detects volatile organic compounds</p>
+          <span class="sensor-unit-label">PPB</span>
+        </div>
+        <div class="sensor-card">
+          <div class="sensor-img-wrap"><img src="img/graphics/humidity_sensor.png" alt="Humidity sensor" loading="lazy"></div>
+          <h4 style="color: var(--sensor-humid);">Humidity</h4>
+          <p class="sensor-desc">Relative humidity and air temperature</p>
+          <span class="sensor-unit-label">%RH / °C</span>
+        </div>
+        <div class="sensor-card">
+          <div class="sensor-img-wrap"><img src="img/graphics/uv_sensor.png" alt="UV and light sensor" loading="lazy"></div>
+          <h4 style="color: var(--sensor-uv);">UV &amp; Light</h4>
+          <p class="sensor-desc">Ambient light and ultraviolet radiation</p>
+          <span class="sensor-unit-label">Lux / UV Index</span>
+        </div>
+      </div>
+      <div class="demo-banner reveal">
+        <div>
+          <h3><i class="fa-solid fa-hands-holding-circle"></i> See the sensors in action</h3>
+          <p>All sensor kits are available at the Augmented Human Lab, NUS. We can arrange a hands-on demo or bring Kiwrious to your classroom.</p>
+        </div>
+        <a href="#contact" class="btn-primary">Arrange a Demo <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal">
+          <div class="story-photo">
+            <img src="img/kiwrious.jpg" alt="Kiwrious sensors in classroom" loading="lazy">
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="section-label">Our Story</span>
+          <div class="location-badges">
+            <span class="location-badge">
+              <i class="fa-solid fa-location-dot" style="color:var(--sensor-air);"></i> Auckland, NZ
+            </span>
+            <i class="fa-solid fa-arrow-right-long" style="font-size:16px; color:var(--teal-accent);"></i>
+            <span class="location-badge active">
+              <i class="fa-solid fa-location-dot" style="color:var(--orange);"></i> Singapore
+            </span>
+          </div>
+          <h2 class="section-title">From New Zealand to Singapore</h2>
+          <p style="color:var(--mid-gray); font-size:17px; line-height:1.7; margin-bottom:32px;">
+            Kiwrious started as a research project at the University of Auckland, funded by NZ's Curious Minds initiative. After validating with schools across New Zealand and winning the Velocity Innovation award, the technology and IP now lives within the <strong>Augmented Human Lab</strong> at the National University of Singapore.
+          </p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <h4><i class="fa-solid fa-seedling" style="color:var(--teal-accent);margin-right:6px;"></i>Research &amp; prototyping</h4>
+                <p>Founded at Auckland Bioengineering Institute. Curious Minds grant. First sensor prototypes tested in NZ schools.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <h4><i class="fa-solid fa-award" style="color:var(--sensor-cond);margin-right:6px;"></i>Kiwrious Ltd incorporated</h4>
+                <p>Registered as a not-for-profit in New Zealand. Deployed across 7+ schools in Auckland. Won Velocity $100K Challenge.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <h4><i class="fa-solid fa-earth-asia" style="color:var(--sensor-humid);margin-right:6px;"></i>Augmented Human Lab, NUS</h4>
+                <p>IP and technology now based in Singapore. New focus on Southeast Asia. Continued R&amp;D with expanded sensor and software capabilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLABORATORS -->
+  <section class="collaborators" id="collaborators">
+    <div class="container">
+      <span class="section-label reveal">The People Behind Kiwrious</span>
+      <h2 class="section-title reveal">Our collaborators</h2>
+      <p class="section-subtitle reveal">Kiwrious was built by a multidisciplinary team of researchers, engineers, designers, and educators across the Augmented Human Lab.</p>
+
+      <div class="collab-grid reveal">
+        <a href="https://ahlab.org/people/suranga-nanayakkara/" target="_blank" class="collab-person">
+          <img src="img/avatars/suranga.png" alt="Suranga Nanayakkara" class="collab-avatar" loading="lazy">
+          <h4>Suranga Nanayakkara</h4>
+          <p>Founder &amp; Project Lead</p>
+        </a>
+        <a href="https://ahlab.org/people/dawn-garbett/" target="_blank" class="collab-person">
+          <img src="img/avatars/dawn.png" alt="Dawn Garbett" class="collab-avatar" loading="lazy">
+          <h4>Dawn Garbett</h4>
+          <p>Education Leader</p>
+        </a>
+        <a href="https://ahlab.org/people/sonia-dupuch/" target="_blank" class="collab-person">
+          <img src="img/avatars/sonia.png" alt="Sonia Dupuch" class="collab-avatar" loading="lazy">
+          <h4>Sonia Dupuch</h4>
+          <p>Business Development</p>
+        </a>
+        <a href="https://ahlab.org/people/alaeddin-nassani/" target="_blank" class="collab-person">
+          <img src="img/avatars/alaeddin.png" alt="Alaeddin Nassani" class="collab-avatar" loading="lazy">
+          <h4>Alaeddin Nassani</h4>
+          <p>Software Engineer</p>
+        </a>
+        <a href="https://ahlab.org/people/sankha-cooray/" target="_blank" class="collab-person">
+          <img src="img/avatars/sankha.png" alt="Sankha Cooray" class="collab-avatar" loading="lazy">
+          <h4>Sankha Cooray</h4>
+          <p>Software Engineer</p>
+        </a>
+        <a href="https://ahlab.org/people/yvonne-chua/" target="_blank" class="collab-person">
+          <img src="img/avatars/yvonne.png" alt="Yvonne Chua" class="collab-avatar" loading="lazy">
+          <h4>Yvonne Chua</h4>
+          <p>Lead Designer</p>
+        </a>
+        <a href="https://ahlab.org/people/chamod-weerasinghe/" target="_blank" class="collab-person">
+          <img src="img/avatars/chamod.png" alt="Chamod Weerasinghe" class="collab-avatar" loading="lazy">
+          <h4>Chamod Weerasinghe</h4>
+          <p>Embedded Systems</p>
+        </a>
+        <a href="https://ahlab.org/people/juan-pablo-forero-cortes/" target="_blank" class="collab-person">
+          <img src="img/avatars/juan.png" alt="Juan Pablo Forero Cortes" class="collab-avatar" loading="lazy">
+          <h4>Juan Pablo Forero Cort&eacute;s</h4>
+          <p>Embedded Systems</p>
+        </a>
+        <a href="https://ahlab.org/people/jiashuo-cao/" target="_blank" class="collab-person">
+          <img src="img/avatars/jiashuo.png" alt="Jiashuo Cao" class="collab-avatar" loading="lazy">
+          <h4>Jiashuo Cao</h4>
+          <p>Software Engineer</p>
+        </a>
+        <a href="https://ahlab.org/people/qin-wu/" target="_blank" class="collab-person">
+          <img src="img/avatars/qin.png" alt="Qin Wu" class="collab-avatar" loading="lazy">
+          <h4>Qin Wu</h4>
+          <p>Designer</p>
+        </a>
+        <a href="https://ahlab.org/people/fiona-taimana/" target="_blank" class="collab-person">
+          <img src="img/avatars/fiona.png" alt="Fiona Taimana" class="collab-avatar" loading="lazy">
+          <h4>Fiona Taimana</h4>
+          <p>Marketing</p>
+        </a>
+        <a href="https://ahlab.org/people/hussel-suriyaarachchi/" target="_blank" class="collab-person">
+          <img src="img/avatars/hussel.png" alt="Hussel Suriyaarachchi" class="collab-avatar" loading="lazy">
+          <h4>Hussel Suriyaarachchi</h4>
+          <p>Researcher</p>
+        </a>
+        <a href="https://ahlab.org/people/paul-denny/" target="_blank" class="collab-person">
+          <img src="img/avatars/paul.png" alt="Paul Denny" class="collab-avatar" loading="lazy">
+          <h4>Paul Denny</h4>
+          <p>Researcher</p>
+        </a>
+        <a href="https://ahlab.org/people/michelle-wu/" target="_blank" class="collab-person">
+          <img src="img/avatars/michelle.png" alt="Michelle Wu" class="collab-avatar" loading="lazy">
+          <h4>Michelle Wu</h4>
+          <p>Researcher</p>
+        </a>
+        <a href="https://ahlab.org/people/hannah-qiao/" target="_blank" class="collab-person">
+          <img src="img/avatars/hannah.png" alt="Hannah Qiao" class="collab-avatar" loading="lazy">
+          <h4>Hannah Qiao</h4>
+          <p>Researcher</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE OFFER -->
+  <section class="offer" id="offer">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:48px;">
+        <span class="section-label reveal">What We Offer</span>
+        <h2 class="section-title reveal">Engage with Kiwrious</h2>
+      </div>
+      <div class="offer-grid">
+        <div class="offer-card reveal reveal-delay-1">
+          <div class="offer-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Hands-on Demo</h3>
+          <p>Visit the Augmented Human Lab at NUS to see all six sensors in action. Try the software, ask questions, explore possibilities.</p>
+        </div>
+        <div class="offer-card reveal reveal-delay-2">
+          <div class="offer-icon"><i class="fa-solid fa-school"></i></div>
+          <h3>In-Class Sessions</h3>
+          <p>We bring Kiwrious to your school. Evaluate science learning outcomes with real sensor data in your classroom environment.</p>
+        </div>
+        <div class="offer-card reveal reveal-delay-3">
+          <div class="offer-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Partnerships</h3>
+          <p>Collaborate with us on research, curriculum development, or technology integration. We work with educators, researchers, and institutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION -->
+  <section class="validation" id="validation">
+    <div class="container">
+      <span class="section-label reveal">Track Record</span>
+      <h2 class="section-title reveal">Tested and validated</h2>
+      <p class="section-subtitle reveal">Kiwrious has been used by hundreds of students across New Zealand, with coverage from national media and support from leading institutions.</p>
+      <div class="testimonial-row reveal">
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <blockquote>A very fun experiment, that was easy to use, and provided facts and answers you may not know about UV.</blockquote>
+          <cite><i class="fa-solid fa-user-graduate" style="margin-right:6px;opacity:0.5;"></i>Student — King's School, Auckland</cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <blockquote>I liked how we could experiment with different materials and collaborate with friends.</blockquote>
+          <cite><i class="fa-solid fa-user-graduate" style="margin-right:6px;opacity:0.5;"></i>Student — Panmure Bridge School, Auckland</cite>
+        </div>
+      </div>
+      <p class="logos-label reveal"><i class="fa-solid fa-graduation-cap" style="margin-right:6px;"></i>Schools who helped us along the way</p>
+      <div class="logo-row reveal">
+        <img src="img/schools/baradene_logo.png" alt="Baradene College" loading="lazy">
+        <img src="img/schools/panmure_bridge_logo.png" alt="Panmure Bridge School" loading="lazy">
+        <img src="img/schools/kings_logo.png" alt="King's School" loading="lazy">
+        <img src="img/schools/mangawahi_beach.png" alt="Mangawhai Beach School" loading="lazy">
+        <img src="img/schools/eggs_logo.png" alt="Epsom Girls Grammar" loading="lazy">
+        <img src="img/schools/mags_logo.png" alt="Mt Albert Grammar" loading="lazy">
+      </div>
+      <p class="logos-label reveal" style="margin-top:40px;"><i class="fa-solid fa-heart" style="margin-right:6px;"></i>Friends &amp; supporters</p>
+      <div class="logo-row reveal">
+        <img src="img/brands/uoa@2x.png" alt="University of Auckland" loading="lazy">
+        <img src="img/brands/ABI_logo.png" alt="Auckland Bioengineering Institute" loading="lazy">
+        <img src="img/brands/AHLab_Logo.png" alt="Augmented Human Lab" loading="lazy">
+        <img src="img/brands/CIE_logo.png" alt="Centre for Innovation and Entrepreneurship" loading="lazy">
+        <img src="img/brands/logo-x2@2x.png" alt="Curious Minds" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & AWARDS -->
+  <section class="research" id="research">
+    <div class="container">
+      <span class="section-label reveal">Research &amp; Recognition</span>
+      <h2 class="section-title reveal">Peer-reviewed and award-winning</h2>
+      <p class="section-subtitle reveal">Kiwrious is backed by published research in top-tier venues and recognised by international design and innovation awards.</p>
+
+      <div class="reveal" style="margin-bottom:36px;">
+        <button class="research-tab active" data-tab="publications"><i class="fa-solid fa-book-open" style="margin-right:6px;"></i>Publications</button>
+        <button class="research-tab" data-tab="awards"><i class="fa-solid fa-trophy" style="margin-right:6px;"></i>Awards &amp; Press</button>
+      </div>
+
+      <div class="research-panel active" id="panel-publications">
+        <div class="pub-list">
+
+          <div class="pub-card reveal">
+            <h4>Striving for Authentic and Sustained Technology Use in the Classroom</h4>
+            <div class="pub-venue">International Journal of Human-Computer Interaction (IJHCI) &middot; 2023</div>
+            <div class="pub-authors">Chua, Y., Cooray, S., Cortes, J.P.F., Denny, P., Dupuch, S., Garbett, D.L., Nassani, A., Cao, J., Qiao, H. et al.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1080/10447318.2023.2229485" target="_blank"><i class="fa-solid fa-link"></i> DOI</a>
+              <a href="https://drive.google.com/file/d/1fhABNfB6965rV6NJCIXlgrVl0Bgn6e6n/view" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+
+          <div class="pub-card reveal">
+            <h4>Using Sensor-Based Programming to Improve Self-Efficacy and Outcome Expectancy for Underrepresented Groups</h4>
+            <div class="pub-venue">ITiCSE 2023 &middot; ACM</div>
+            <div class="pub-authors">Suriyaarachchi, H., Nassani, A., Denny, P. and Nanayakkara, S.C.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1145/3587102.3588854" target="_blank"><i class="fa-solid fa-link"></i> DOI</a>
+              <a href="https://drive.google.com/file/d/1Z1oDWS8r8P8ZdoY94MWnmYqAaOxGbE4_/view" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+
+          <div class="pub-card reveal">
+            <h4>Kiwrious AR: Exploring AR for Scientific Inquiry and Scaffolded Learning</h4>
+            <div class="pub-venue">IEEE ISMAR 2022</div>
+            <div class="pub-authors">Nassani, A. et al.</div>
+            <div class="pub-links">
+              <a href="https://ieeexplore.ieee.org/document/9974413" target="_blank"><i class="fa-solid fa-link"></i> DOI</a>
+            </div>
+          </div>
+
+          <div class="pub-card reveal">
+            <h4>Scratch and Sense: Using Real-Time Sensor Data to Motivate Students Learning Scratch</h4>
+            <div class="pub-venue">SIGCSE 2022 &middot; ACM</div>
+            <div class="pub-authors">Suriyaarachchi, H., Denny, P. and Nanayakkara, S.C.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1145/3478431.3499316" target="_blank"><i class="fa-solid fa-link"></i> DOI</a>
+              <a href="https://drive.google.com/file/d/190zsSnnTMiqlosHbzEDOWRCSzWuT2_kM/view" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+
+          <div class="pub-card reveal">
+            <h4>Primary School Students Programming with Real-Time Environmental Sensor Data</h4>
+            <div class="pub-venue">ACE 2022 &middot; ACM</div>
+            <div class="pub-authors">Suriyaarachchi, H., Denny, P., Cort&eacute;s, J.P.F., Weerasinghe, C. and Nanayakkara, S.C.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1145/3511861.3511871" target="_blank"><i class="fa-solid fa-link"></i> DOI</a>
+              <a href="https://drive.google.com/file/d/12H6A0apCmvWOAB66L2-fCa3nGPjrT9n8/view" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+            </div>
+          </div>
+
+          <div class="pub-card reveal">
+            <h4>Sensor-Based Interactive Worksheets to Support Guided Scientific Inquiry</h4>
+            <div class="pub-venue">IDC 2021 &middot; ACM</div>
+            <div class="pub-authors">Cao, J., Chan, S.W.T., Garbett, D.L., Denny, P., Nassani, A., Scholl, P.M. and Nanayakkara, S.C.</div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1145/3459990.3460716" target="_blank"><i class="fa-solid fa-link"></i> DOI</a>
+              <a href="https://drive.google.com/file/d/1PePtQbU4Qquk1UpyIv9DXGpejZnoNlbf/view" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+              <span class="pub-badge"><i class="fa-solid fa-award"></i> Best Short Paper</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="research-panel" id="panel-awards">
+        <div class="award-grid">
+
+          <a href="https://www.un.org/en/academic-impact/research-team-boosts-science-learning-children-kiwrious-project" target="_blank" class="award-card reveal">
+            <div class="award-year">2022</div>
+            <h4>Research Team Boosts Science Learning for Children</h4>
+            <div class="award-org">United Nations Academic Impact</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://www.fastcompany.com/90623632/world-changing-ideas-awards-2021-education-finalists-and-honorable-mentions" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>World Changing Ideas &middot; Education Finalist</h4>
+            <div class="award-org">Fast Company</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://www.fastcompany.com/90624522/world-changing-ideas-awards-2021-asia-pacific-finalists-and-honorable-mentions" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>World Changing Ideas &middot; Asia-Pacific Honorable Mention</h4>
+            <div class="award-org">Fast Company</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://good-design.org/projects/kiwrious/" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>Social Impact Winner</h4>
+            <div class="award-org">Good Design Australia</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://bestawards.co.nz/public-good-award/public-good-award/augmented-human-lab/kiwrious/" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>Best Design Awards &middot; Public Good Silver</h4>
+            <div class="award-org">Designers Institute of New Zealand</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://bestawards.co.nz/digital/user-experience/augmented-human-lab/kiwrious-1/" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>Best Design Awards &middot; User Experience Bronze</h4>
+            <div class="award-org">Designers Institute of New Zealand</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://bestawards.co.nz/value-of-design-award/augmented-human-lab/kiwrious-2/" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>Best Design Awards &middot; Value of Design Bronze</h4>
+            <div class="award-org">Designers Institute of New Zealand</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://cloud.google.com/customers/augmented-human-lab" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>Google Cloud Customer Story</h4>
+            <div class="award-org">Google Cloud</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+          <a href="https://www.auckland.ac.nz/en/news/2021/05/12/Interactive-science-kits-sent-to-schools.html" target="_blank" class="award-card reveal">
+            <div class="award-year">2021</div>
+            <h4>Novel Interactive Science Kits Sent to Schools</h4>
+            <div class="award-org">University of Auckland</div>
+            <span class="award-link"><i class="fa-solid fa-up-right-from-square"></i> Read more</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2>Let's make science<br>visible together</h2>
+          <p>Whether you're an educator, researcher, or technology partner — we'd love to hear from you. All sensors are available for demo at NUS.</p>
+          <div class="contact-detail">
+            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="detail-text">
+              <h4>Visit us</h4>
+              <p>Augmented Human Lab<br>National University of Singapore</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="detail-text">
+              <h4>Email</h4>
+              <p>suranga&#64;kiwrious.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="detail-text">
+              <h4>On the web</h4>
+              <p>
+                <a href="https://measure.kiwrious.com" style="color:var(--teal-accent);">measure</a> &middot;
+                <a href="https://play.kiwrious.com" style="color:var(--teal-accent);">play</a> &middot;
+                <a href="https://dev.kiwrious.com" style="color:var(--teal-accent);">dev</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <h3><i class="fa-solid fa-paper-plane" style="margin-right:8px;opacity:0.7;"></i>Get in touch</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your name *" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Email address *" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="organisation" placeholder="School / Organisation">
+            </div>
+            <div class="form-group">
+              <select name="interest" id="interest">
+                <option value="">I'm interested in...</option>
+                <option value="demo">Hands-on demo at NUS</option>
+                <option value="classroom">In-class session at our school</option>
+                <option value="partnership">Research or technology partnership</option>
+                <option value="purchase">Purchasing sensor kits</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Tell us more..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message <i class="fa-solid fa-arrow-right" style="margin-left:6px;"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" width="120" height="28" loading="lazy">
+          <p>Making invisible science visible. A technology by the Augmented Human Lab, National University of Singapore.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Tools</h5>
+          <a href="https://measure.kiwrious.com" target="_blank"><i class="fa-solid fa-chart-line fa-fw"></i> Measure</a>
+          <a href="https://play.kiwrious.com" target="_blank"><i class="fa-solid fa-microscope fa-fw"></i> Play</a>
+          <a href="https://dev.kiwrious.com" target="_blank"><i class="fa-solid fa-code fa-fw"></i> Dev</a>
+        </div>
+        <div class="footer-col">
+          <h5>About</h5>
+          <a href="#story">Our Story</a>
+          <a href="#sensors">Sensor Kit</a>
+          <a href="#validation">Track Record</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="mailto:suranga&#64;kiwrious.com"><i class="fa-solid fa-envelope fa-fw"></i> suranga&#64;kiwrious.com</a>
+          <a href="#contact"><i class="fa-solid fa-calendar-check fa-fw"></i> Book a Demo</a>
+          <a href="https://ahlab.org" target="_blank"><i class="fa-solid fa-up-right-from-square fa-fw"></i> Augmented Human Lab</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kiwrious &middot; Augmented Human Lab, NUS Singapore</p>
+        <a href="#" id="privacy-link">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
