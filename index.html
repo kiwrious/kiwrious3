@@ -68,7 +68,7 @@
         <a href="#story">Our Story</a>
         <a href="#contact" class="btn-demo">Book a Demo</a>
       </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -83,16 +83,16 @@
   </div>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero group" data-solo>
     <div class="container">
       <div class="hero-content">
         <span class="hero-tag"><i class="fa-solid fa-flask"></i> Science Education Technology</span>
         <h1>
-          <span class="typewriter-text">Inspire Curiosity</span><span class="typewriter-cursor"></span>
+          <span class="typewriter"><span class="typewriter-text">Inspire Curiosity</span><span class="typewriter-cursor"></span></span>
         </h1>
         <p>Kiwrious makes invisible science visible. USB sensors and open-source software that connect students to real-world phenomena — from air quality to UV radiation.</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn-primary">Book a Demo <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-primary">Book a Demo</a>
           <a href="#platforms" class="btn-secondary"><i class="fa-solid fa-compass"></i> Explore Tools</a>
         </div>
       </div>
@@ -103,42 +103,42 @@
   </section>
 
   <!-- PLATFORMS -->
-  <section class="platforms" id="platforms">
+  <section class="platforms group" id="platforms">
     <div class="container">
       <span class="section-label reveal">Our Tools</span>
       <h2 class="section-title reveal">A complete science learning platform</h2>
       <p class="section-subtitle reveal">Three integrated tools for measuring, exploring, and building with real-world sensor data.</p>
       <div class="platform-grid">
         <a href="https://measure.kiwrious.com" target="_blank" class="platform-card reveal reveal-delay-1">
-          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h3>Measure</h3>
+          <div class="card-head"><div class="card-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Measure</h3></div>
           <p>Real-time sensor data visualisation. Connect a Kiwrious sensor via USB and see live readings — temperature, heart rate, UV, humidity and more.</p>
-          <span class="card-link">measure.kiwrious.com <i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+          <span class="card-link">measure.kiwrious.com</span>
         </a>
         <a href="https://play.kiwrious.com" target="_blank" class="platform-card reveal reveal-delay-2">
-          <div class="card-icon"><i class="fa-solid fa-microscope"></i></div>
-          <h3>Play</h3>
+          <div class="card-head"><div class="card-icon"><i class="fa-solid fa-microscope"></i></div><h3>Play</h3></div>
           <p>Interactive science experiments and guided inquiries. Students explore phenomena, record observations, and share discoveries with classmates.</p>
-          <span class="card-link">play.kiwrious.com <i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+          <span class="card-link">play.kiwrious.com</span>
         </a>
         <a href="https://dev.kiwrious.com" target="_blank" class="platform-card reveal reveal-delay-3">
-          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-          <h3>Dev</h3>
+          <div class="card-head"><div class="card-icon"><i class="fa-solid fa-code"></i></div><h3>Dev</h3></div>
           <p>Developer tools, WebUSB APIs, and integration guides. Build your own sensor-powered applications on top of the Kiwrious hardware.</p>
-          <span class="card-link">dev.kiwrious.com <i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+          <span class="card-link">dev.kiwrious.com</span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- SCIENTIFIC PROCESS -->
-  <section class="process">
+  <section class="process group" id="approach">
     <div class="container">
       <span class="section-label reveal">The Kiwrious Approach</span>
       <h2 class="section-title reveal">Science as a living process</h2>
       <p class="section-subtitle reveal">Kiwrious guides students through a complete cycle of scientific inquiry — from observation to discussion — using real sensor data.</p>
       <div class="process-img-wrap reveal">
-        <img src="img/flow_chart.png" alt="Kiwrious scientific inquiry process: observe, ask, measure, interpret, share, discuss" loading="lazy">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/flow_chart_mobile.png">
+          <img src="img/flow_chart.png" alt="Kiwrious scientific inquiry process: observe, ask, measure, interpret, share, discuss" loading="lazy">
+        </picture>
       </div>
       <div class="process-steps reveal">
         <span class="process-step"><i class="fa-solid fa-eye"></i> Observe</span>
@@ -157,7 +157,7 @@
   </section>
 
   <!-- SENSORS -->
-  <section class="sensors" id="sensors">
+  <section class="sensors group" id="sensors">
     <div class="container">
       <span class="section-label reveal">The Sensor Kit</span>
       <h2 class="section-title reveal">Six sensors. Endless experiments.</h2>
@@ -205,13 +205,13 @@
           <h3><i class="fa-solid fa-hands-holding-circle"></i> See the sensors in action</h3>
           <p>All sensor kits are available at the Augmented Human Lab, NUS. We can arrange a hands-on demo or bring Kiwrious to your classroom.</p>
         </div>
-        <a href="#contact" class="btn-primary">Arrange a Demo <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-primary">Arrange a Demo</a>
       </div>
     </div>
   </section>
 
   <!-- OUR STORY -->
-  <section class="story" id="story">
+  <section class="story group" id="story">
     <div class="container">
       <div class="story-grid">
         <div class="story-visual reveal">
@@ -263,7 +263,7 @@
   </section>
 
   <!-- COLLABORATORS -->
-  <section class="collaborators" id="collaborators">
+  <section class="collaborators group" id="collaborators">
     <div class="container">
       <span class="section-label reveal">The People Behind Kiwrious</span>
       <h2 class="section-title reveal">Our collaborators</h2>
@@ -350,7 +350,7 @@
   </section>
 
   <!-- WHAT WE OFFER -->
-  <section class="offer" id="offer">
+  <section class="offer group" id="offer">
     <div class="container">
       <div style="text-align:center; margin-bottom:48px;">
         <span class="section-label reveal">What We Offer</span>
@@ -358,18 +358,15 @@
       </div>
       <div class="offer-grid">
         <div class="offer-card reveal reveal-delay-1">
-          <div class="offer-icon"><i class="fa-solid fa-bullseye"></i></div>
-          <h3>Hands-on Demo</h3>
+          <div class="card-head"><div class="offer-icon"><i class="fa-solid fa-bullseye"></i></div><h3>Hands-on Demo</h3></div>
           <p>Visit the Augmented Human Lab at NUS to see all six sensors in action. Try the software, ask questions, explore possibilities.</p>
         </div>
         <div class="offer-card reveal reveal-delay-2">
-          <div class="offer-icon"><i class="fa-solid fa-school"></i></div>
-          <h3>In-Class Sessions</h3>
+          <div class="card-head"><div class="offer-icon"><i class="fa-solid fa-school"></i></div><h3>In-Class Sessions</h3></div>
           <p>We bring Kiwrious to your school. Evaluate science learning outcomes with real sensor data in your classroom environment.</p>
         </div>
         <div class="offer-card reveal reveal-delay-3">
-          <div class="offer-icon"><i class="fa-solid fa-handshake"></i></div>
-          <h3>Partnerships</h3>
+          <div class="card-head"><div class="offer-icon"><i class="fa-solid fa-handshake"></i></div><h3>Partnerships</h3></div>
           <p>Collaborate with us on research, curriculum development, or technology integration. We work with educators, researchers, and institutions.</p>
         </div>
       </div>
@@ -377,7 +374,7 @@
   </section>
 
   <!-- VALIDATION -->
-  <section class="validation" id="validation">
+  <section class="validation group" id="validation">
     <div class="container">
       <span class="section-label reveal">Track Record</span>
       <h2 class="section-title reveal">Tested and validated</h2>
@@ -415,15 +412,15 @@
   </section>
 
   <!-- RESEARCH & AWARDS -->
-  <section class="research" id="research">
+  <section class="research group" id="research">
     <div class="container">
       <span class="section-label reveal">Research &amp; Recognition</span>
       <h2 class="section-title reveal">Peer-reviewed and award-winning</h2>
       <p class="section-subtitle reveal">Kiwrious is backed by published research in top-tier venues and recognised by international design and innovation awards.</p>
 
-      <div class="reveal" style="margin-bottom:36px;">
-        <button class="research-tab active" data-tab="publications"><i class="fa-solid fa-book-open" style="margin-right:6px;"></i>Publications</button>
-        <button class="research-tab" data-tab="awards"><i class="fa-solid fa-trophy" style="margin-right:6px;"></i>Awards &amp; Press</button>
+      <div class="research-tabs reveal" role="tablist">
+        <button class="research-tab active" data-tab="publications" role="tab" aria-selected="true"><i class="fa-solid fa-book-open" style="margin-right:6px;"></i>Publications</button>
+        <button class="research-tab" data-tab="awards" role="tab" aria-selected="false"><i class="fa-solid fa-trophy" style="margin-right:6px;"></i>Awards &amp; Press</button>
       </div>
 
       <div class="research-panel active" id="panel-publications">
@@ -565,7 +562,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="contact group" id="contact">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info reveal">
@@ -624,7 +621,7 @@
             <div class="form-group">
               <textarea name="message" placeholder="Tell us more..." rows="4"></textarea>
             </div>
-            <button type="submit" class="form-submit">Send Message <i class="fa-solid fa-arrow-right" style="margin-left:6px;"></i></button>
+            <button type="submit" class="form-submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -632,36 +629,17 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" width="120" height="28" loading="lazy">
-          <p>Making invisible science visible. A technology by the Augmented Human Lab, National University of Singapore.</p>
-        </div>
-        <div class="footer-col">
-          <h5>Tools</h5>
-          <a href="https://measure.kiwrious.com" target="_blank"><i class="fa-solid fa-chart-line fa-fw"></i> Measure</a>
-          <a href="https://play.kiwrious.com" target="_blank"><i class="fa-solid fa-microscope fa-fw"></i> Play</a>
-          <a href="https://dev.kiwrious.com" target="_blank"><i class="fa-solid fa-code fa-fw"></i> Dev</a>
-        </div>
-        <div class="footer-col">
-          <h5>About</h5>
-          <a href="#story">Our Story</a>
-          <a href="#sensors">Sensor Kit</a>
-          <a href="#validation">Track Record</a>
-        </div>
-        <div class="footer-col">
-          <h5>Connect</h5>
-          <a href="mailto:suranga&#64;ahlab.org"><i class="fa-solid fa-envelope fa-fw"></i> suranga&#64;ahlab.org</a>
-          <a href="#contact"><i class="fa-solid fa-calendar-check fa-fw"></i> Book a Demo</a>
-          <a href="https://ahlab.org" target="_blank"><i class="fa-solid fa-up-right-from-square fa-fw"></i> Augmented Human Lab</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Kiwrious &middot; Augmented Human Lab, NUS Singapore</p>
-        <a href="#" id="privacy-link">Privacy Policy</a>
-      </div>
+  <footer class="footer group" data-pin>
+    <div class="container footer-line">
+      <img src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" width="98" height="22" loading="lazy">
+      <p class="footer-note">&copy; 2026 Kiwrious &middot; Augmented Human Lab, NUS Singapore</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://measure.kiwrious.com" target="_blank">Measure</a>
+        <a href="https://play.kiwrious.com" target="_blank">Play</a>
+        <a href="https://dev.kiwrious.com" target="_blank">Dev</a>
+        <a href="https://ahlab.org" target="_blank">AHLab</a>
+        <a href="#" id="privacy-link">Privacy</a>
+      </nav>
     </div>
   </footer>
 

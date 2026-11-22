@@ -15,6 +15,7 @@
   --light-gray: #e8edef;
   --mid-gray: #6b7c85;
   --text: #2a3a40;
+  --card-hover: #eaf3f4;
 
   /* Sensor colors */
   --sensor-temp: #D90033;
@@ -38,7 +39,6 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -139,13 +139,13 @@ ul, ol { list-style: none; }
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.3px;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, box-shadow 0.2s;
   border: none;
   cursor: pointer;
 }
 .nav-links .btn-demo:hover {
   background: var(--orange-hover);
-  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(248,87,8,0.35);
 }
 
 /* Mobile menu */
@@ -290,13 +290,13 @@ ul, ol { list-style: none; }
   border-radius: 10px;
   font-weight: 600;
   font-size: 16px;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, box-shadow 0.2s;
   border: none;
   cursor: pointer;
 }
 .btn-primary:hover {
   background: var(--orange-hover);
-  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(248,87,8,0.35);
 }
 .btn-secondary {
   display: inline-flex;
@@ -376,7 +376,7 @@ ul, ol { list-style: none; }
   background: var(--off-white);
   border-radius: 16px;
   padding: 40px 32px;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition: background-color 0.2s;
   border: 1px solid transparent;
   position: relative;
   overflow: hidden;
@@ -392,9 +392,7 @@ ul, ol { list-style: none; }
   transition: opacity 0.25s;
 }
 .platform-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,87,102,0.1);
-  border-color: var(--light-gray);
+  background: var(--card-hover);
 }
 .platform-card:nth-child(1)::before { background: var(--sensor-humid); }
 .platform-card:nth-child(2)::before { background: var(--sensor-air); }
@@ -448,7 +446,6 @@ ul, ol { list-style: none; }
 .process {
   padding: var(--section-pad) 0 calc(var(--section-pad) * 0.6);
   background: var(--white);
-  border-top: 1px solid var(--light-gray);
 }
 .process .container {
   text-align: center;
@@ -487,8 +484,7 @@ ul, ol { list-style: none; }
   transition: background 0.2s, border-color 0.2s;
 }
 .process-step:hover {
-  background: var(--white);
-  border-color: var(--teal-accent);
+  background: var(--card-hover);
 }
 .process-step i {
   font-size: 14px;
@@ -525,14 +521,13 @@ ul, ol { list-style: none; }
   border-radius: 16px;
   padding: 28px 16px 24px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: background-color 0.2s;
   border: 1px solid var(--light-gray);
   position: relative;
   cursor: default;
 }
 .sensor-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 36px rgba(0,87,102,0.08);
+  background: var(--card-hover);
 }
 .sensor-card .sensor-img-wrap {
   width: 100%;
@@ -779,10 +774,10 @@ ul, ol { list-style: none; }
   padding: 40px 32px;
   text-align: center;
   border: 1px solid transparent;
-  transition: border-color 0.25s;
+  transition: background-color 0.2s;
 }
 .offer-card:hover {
-  border-color: var(--light-gray);
+  background: var(--card-hover);
 }
 .offer-card .offer-icon {
   width: 64px;
@@ -815,16 +810,6 @@ ul, ol { list-style: none; }
   padding: var(--section-pad) 0;
   background: linear-gradient(160deg, var(--teal-dark) 0%, var(--navy) 100%);
   position: relative;
-}
-.contact::before {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: linear-gradient(to bottom, var(--white), transparent);
-  pointer-events: none;
 }
 .contact .container {
   position: relative;
@@ -949,12 +934,12 @@ ul, ol { list-style: none; }
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, box-shadow 0.2s;
   margin-top: 8px;
 }
 .form-submit:hover {
   background: var(--orange-hover);
-  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(248,87,8,0.35);
 }
 
 /* ---- Footer ---- */
@@ -996,7 +981,6 @@ ul, ol { list-style: none; }
 .footer-col a:hover { color: var(--teal-accent); }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -1162,7 +1146,7 @@ ul, ol { list-style: none; }
   transition: border-color 0.2s;
   text-align: left;
 }
-.pub-card:hover { border-color: var(--teal-accent); }
+.pub-card:hover { background: var(--card-hover); }
 .pub-card h4 {
   font-family: var(--font-display);
   font-size: 15px;
@@ -1225,7 +1209,7 @@ ul, ol { list-style: none; }
   text-align: left;
   transition: border-color 0.2s;
 }
-.award-card:hover { border-color: var(--teal-accent); }
+.award-card:hover { background: var(--card-hover); }
 .award-card .award-year {
   font-size: 12px;
   font-weight: 700;
@@ -1291,4 +1275,205 @@ ul, ol { list-style: none; }
   .sensor-showcase { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .sensor-card { padding: 20px 12px 18px; }
   .contact-form-wrap { padding: 28px 20px; }
+}
+/* ==========================================================================
+   Screen-fit refresh (ui-ux-style rules 1, 2, 5, 6, 14, 18, 19, 22, 31, 41)
+   ========================================================================== */
+
+:root { --bar-h: 64px; }
+
+/* No overscroll bounce, no white edge: the page scrolls inside <body>. */
+html {
+  height: 100%;
+  overflow: hidden;
+  background: var(--navy);
+  overscroll-behavior: none;
+}
+body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+/* Page text can't be selected; fields still can. */
+html { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+input, textarea, select, [contenteditable]:not([contenteditable="false"]),
+.selectable, .selectable * { -webkit-user-select: text; user-select: text; -webkit-touch-callout: default; }
+img, svg, a { -webkit-user-drag: none; }
+
+/* App bar: a fixed, known height (tall over the hero, --bar-h once scrolled)
+   so ↑/↓ paging lands each screen exactly under it. Full width (rule 19). */
+.nav { height: 84px; padding: 0; display: flex; align-items: center;
+       transition: background 0.35s, box-shadow 0.35s, height 0.35s; }
+.nav.scrolled { height: var(--bar-h); padding: 0; }
+.nav .container { max-width: none; }
+.nav-links { gap: 6px; }
+.nav-links a:not(.btn-demo) {
+  padding: 7px 14px;
+  border-radius: 100px;
+  transition: color 0.2s, background-color 0.25s;
+}
+.nav-links a:not(.btn-demo):hover { background: rgba(255,255,255,0.08); }
+.nav-links a[aria-current] { color: var(--white); font-weight: 700; background: rgba(255,255,255,0.16); }
+.nav-links .btn-demo { margin-left: 14px; }
+.nav-toggle span { margin: 5px 0; }
+
+/* Groups: each section centres its content inside the min-height main.js
+   gives it, so consecutive sections pack into whole screens. */
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: var(--bar-h);
+}
+.group > .container { width: 100%; }
+.platforms, .sensors, .story, .collaborators, .offer,
+.validation, .research, .contact {
+  padding: clamp(28px, 6vh, 80px) 0;
+}
+.process { padding: clamp(28px, 6vh, 80px) 0; }
+.hero { min-height: 100dvh; padding-top: 84px; }
+/* The typewriter cycles one- and two-line phrases; reserve two lines so the
+   hero doesn't jump each time a phrase wraps. */
+.hero h1 { min-height: 2.2em; display: grid; align-content: end; }
+.section-subtitle { margin-bottom: clamp(24px, 4.5vh, 48px); }
+.offer .container > div:first-child { margin-bottom: clamp(24px, 4.5vh, 48px) !important; }
+
+/* Sensors: scale with screen height so the kit + demo banner share a screen. */
+.sensor-card { padding: clamp(16px, 2.6vh, 28px) 16px clamp(14px, 2.2vh, 24px); }
+.sensor-card .sensor-img-wrap { height: clamp(64px, 10.5vh, 116px); margin-bottom: clamp(8px, 1.6vh, 16px); }
+.sensor-card .sensor-img-wrap img { max-height: 92%; }
+.sensor-showcase { margin-bottom: clamp(20px, 4vh, 48px); }
+.demo-banner { padding: clamp(20px, 3.6vh, 44px) 48px; }
+
+/* Process: flow chart scales with height; the step strip stays one line. */
+.process-img-wrap { margin-bottom: 0; }
+.process-img-wrap img { max-height: 40vh; width: auto; max-width: 100%; margin: 0 auto; }
+.process-steps { flex-wrap: nowrap; margin-top: clamp(16px, 3vh, 28px); }
+.process-step { white-space: nowrap; }
+
+/* Collaborators and logo rows tighten a little on shorter screens. */
+.collab-grid { margin-top: 0; gap: clamp(6px, 1.2vh, 16px) 16px; }
+.collab-person { padding: clamp(10px, 1.6vh, 20px) 12px clamp(8px, 1.2vh, 16px); }
+.collab-avatar { width: clamp(56px, 8vh, 72px); height: clamp(56px, 8vh, 72px); }
+.testimonial-row { margin-bottom: clamp(24px, 4.5vh, 48px); }
+.testimonial-card { padding: clamp(22px, 3.6vh, 36px); }
+.logos-label { margin-bottom: clamp(12px, 2.4vh, 24px); }
+.validation .logos-label[style] { margin-top: clamp(20px, 4vh, 40px) !important; }
+.story-photo img { min-height: 0; max-height: 70vh; }
+
+/* Research tabs sit in their pill track (class was missing on the wrapper). */
+.research-tabs { margin-bottom: clamp(20px, 3.6vh, 36px); }
+.research-tab:not(.active):hover { color: var(--navy); }
+
+/* Cards: icon and title on one row, text flush left (rule 31). */
+.card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.card-head h3 { margin: 0 !important; }
+.platform-card .card-icon, .offer-card .offer-icon { margin: 0; flex: none; }
+.platform-card { padding: clamp(24px, 4vh, 40px) 32px; }
+.offer-card { text-align: left; padding: clamp(24px, 4vh, 40px) 32px; }
+.offer-card .offer-icon { width: 56px; height: 56px; font-size: 22px; }
+
+/* Footer: one short line on the bottom edge of the last screen (rules 5, 18). */
+.footer { padding: 0; margin-top: auto; }
+.footer-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-block: 18px;
+  font-size: 13px;
+}
+.footer-line img { height: 22px; width: auto; }
+.footer-note { color: rgba(255,255,255,0.45); margin-right: auto; }
+.footer-links { display: flex; gap: 18px; }
+.footer-links a { color: rgba(255,255,255,0.55); transition: color 0.2s; }
+.footer-links a:hover { color: var(--teal-accent); }
+
+/* Publications: three columns on wide screens so the list fits one screen. */
+@media (min-width: 1025px) {
+  .pub-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .pub-card { display: flex; flex-direction: column; padding: clamp(16px, 2.4vh, 24px) 24px; }
+  .pub-card .pub-links { margin-top: auto; }
+}
+
+/* Short laptop windows: tighten type and gaps so each section fits a screen. */
+@media (min-width: 901px) and (max-height: 800px) {
+  .section-title { font-size: clamp(26px, 4.6vh, 36px); margin-bottom: 10px; }
+  .section-subtitle { font-size: 16px; }
+  .section-label { margin-bottom: 6px; }
+  .story-grid { gap: 56px; }
+  .story p[style] { font-size: 15px !important; margin-bottom: 16px !important; line-height: 1.6 !important; }
+  .timeline { gap: 14px; margin-top: 16px; }
+  .timeline-item:not(:last-child) .timeline-dot::after { height: 28px; }
+  .sensor-card .sensor-desc { margin-bottom: 4px; }
+  .demo-banner h3 { font-size: 20px; }
+  .demo-banner p { font-size: 15px; }
+  .contact-info > p { margin-bottom: 20px; }
+  .contact-detail { margin-bottom: 12px; }
+  .contact-form-wrap { padding: 28px 32px; }
+  .contact-form-wrap h3 { margin-bottom: 16px; }
+  .form-group { margin-bottom: 10px; }
+  .form-group input, .form-group textarea, .form-group select { padding: 11px 16px; }
+  .form-group textarea { min-height: 76px; }
+  .testimonial-card .quote-mark { font-size: 32px; }
+  .logo-row img { height: 34px; }
+  .logo-row { margin-bottom: 4px; }
+  .testimonial-card { padding: 20px 26px; }
+  .testimonial-card .quote-mark { margin-bottom: 2px; }
+  .testimonial-card blockquote { margin-bottom: 10px; }
+  .section-subtitle { margin-bottom: 20px; }
+  .sensor-showcase { margin-bottom: 16px; gap: 14px; }
+  .research-tabs { margin-bottom: 14px; }
+  .pub-list { gap: 10px; }
+  .pub-card { padding: 12px 18px; }
+  .pub-card h4 { font-size: 14px; line-height: 1.35; margin-bottom: 4px; }
+  .pub-card .pub-venue { font-size: 12px; margin-bottom: 2px; }
+  .pub-card .pub-authors { font-size: 11.5px; line-height: 1.4; margin-bottom: 8px; }
+  .pub-card .pub-links a { padding: 2px 10px; }
+  .sensors, .research, .validation { padding-block: max(24px, 5vh); }
+}
+
+@media (max-width: 1024px) {
+  .hero-visual { margin-top: 24px; }
+}
+@media (max-width: 900px) {
+  .process-steps { justify-content: flex-start; overflow-x: auto; scrollbar-width: none;
+                   margin-inline: calc(-1 * clamp(20px, 4vw, 48px)); padding-inline: clamp(20px, 4vw, 48px); }
+  .process-steps::-webkit-scrollbar { display: none; }
+  .process-img-wrap img { max-height: none; width: 100%; }
+}
+@media (max-width: 768px) {
+  .hero { padding: 100px 0 40px; }
+  .hero h1 { align-content: center; }
+  .hero-tag { margin-bottom: 16px; }
+  .hero p { font-size: 16px; margin-bottom: 24px; }
+  .hero-visual { margin-top: 8px; }
+  .hero-sensors-img { max-width: min(280px, 72vw); }
+  .process-img-wrap img { max-height: 56vh; width: auto; max-width: 100%; }
+  .platforms, .sensors, .story, .collaborators, .offer,
+  .validation, .research, .contact, .process { padding: 56px 0; }
+  .footer-line { gap: 12px; font-size: 12px; justify-content: center; }
+  .footer-note { display: none; }
+  .footer-links { gap: 12px; }
+  .demo-banner { padding: 32px 24px; }
+}
+
+/* Award cards: org and "Read more" share the last row, pinned to the bottom,
+   so every card's title is level and the panel fits one screen. */
+.award-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  column-gap: 12px;
+  padding: clamp(14px, 2.2vh, 22px) 22px;
+}
+.award-card .award-year { grid-column: 1 / -1; margin-bottom: 4px; }
+.award-card h4 { grid-column: 1 / -1; margin-bottom: 8px; }
+.award-card .award-org { margin: 0; align-self: end; }
+.award-card .award-link { align-self: end; }
+@media (min-width: 901px) and (max-height: 800px) {
+  .award-grid { gap: 10px; }
+  .award-card { padding: 12px 18px; }
+  .award-card h4 { margin-bottom: 6px; }
 }
