@@ -369,8 +369,8 @@ ul, ol { list-style: none; }
 
 .platform-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 .platform-card {
   background: var(--off-white);
@@ -394,9 +394,10 @@ ul, ol { list-style: none; }
 .platform-card:hover {
   background: var(--card-hover);
 }
-.platform-card:nth-child(1)::before { background: var(--sensor-humid); }
-.platform-card:nth-child(2)::before { background: var(--sensor-air); }
-.platform-card:nth-child(3)::before { background: var(--sensor-uv); }
+.platform-card:nth-child(1)::before { background: var(--sensor-heart); }
+.platform-card:nth-child(2)::before { background: var(--sensor-humid); }
+.platform-card:nth-child(3)::before { background: var(--sensor-air); }
+.platform-card:nth-child(4)::before { background: var(--sensor-uv); }
 
 .platform-card .card-icon {
   width: 56px;
@@ -409,9 +410,10 @@ ul, ol { list-style: none; }
   margin-bottom: 24px;
   color: var(--white);
 }
-.platform-card:nth-child(1) .card-icon { background: var(--sensor-humid); }
-.platform-card:nth-child(2) .card-icon { background: var(--sensor-air); }
-.platform-card:nth-child(3) .card-icon { background: var(--sensor-uv); }
+.platform-card:nth-child(1) .card-icon { background: var(--sensor-heart); }
+.platform-card:nth-child(2) .card-icon { background: var(--sensor-humid); }
+.platform-card:nth-child(3) .card-icon { background: var(--sensor-air); }
+.platform-card:nth-child(4) .card-icon { background: var(--sensor-uv); }
 
 .platform-card h3 {
   font-family: var(--font-display);
@@ -1248,7 +1250,7 @@ ul, ol { list-style: none; }
   .hero-visual { margin-top: 40px; }
   .hero-sensors-img { max-width: 400px; }
 
-  .platform-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .platform-grid { grid-template-columns: repeat(2, 1fr); }
   .sensor-showcase { grid-template-columns: repeat(3, 1fr); }
   .story-grid { grid-template-columns: 1fr; gap: 40px; }
   .testimonial-row { grid-template-columns: 1fr; }
@@ -1261,6 +1263,7 @@ ul, ol { list-style: none; }
 
 @media (max-width: 768px) {
   .nav-links { display: none; }
+  .platform-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
   .nav-toggle { display: block; }
   .sensor-showcase { grid-template-columns: repeat(2, 1fr); }
   .demo-banner { flex-direction: column; text-align: center; padding: 32px 24px; }
@@ -1334,9 +1337,11 @@ img, svg, a { -webkit-user-drag: none; }
 }
 .process { padding: clamp(28px, 6vh, 80px) 0; }
 .hero { min-height: 100dvh; padding-top: 84px; }
-/* The typewriter cycles one- and two-line phrases; reserve two lines so the
-   hero doesn't jump each time a phrase wraps. */
-.hero h1 { min-height: 2.2em; display: grid; align-content: end; }
+/* Hero headline: every typewriter phrase stays on one line. The longest
+   ("Make Science Visible") is ~9.5em wide, so cap the size to the column. */
+.hero-content { container-type: inline-size; width: 100%; }
+.hero h1 { min-height: 1.1em; display: grid; align-content: end;
+           white-space: nowrap; font-size: min(clamp(38px, 5vw, 60px), 10cqi); }
 .section-subtitle { margin-bottom: clamp(24px, 4.5vh, 48px); }
 .offer .container > div:first-child { margin-bottom: clamp(24px, 4.5vh, 48px) !important; }
 
@@ -1371,7 +1376,8 @@ img, svg, a { -webkit-user-drag: none; }
 .card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .card-head h3 { margin: 0 !important; }
 .platform-card .card-icon, .offer-card .offer-icon { margin: 0; flex: none; }
-.platform-card { padding: clamp(24px, 4vh, 40px) 32px; }
+.platform-card { padding: clamp(24px, 4vh, 40px) 26px; display: flex; flex-direction: column; }
+.platform-card .card-link { margin-top: auto; align-self: flex-start; }
 .offer-card { text-align: left; padding: clamp(24px, 4vh, 40px) 32px; }
 .offer-card .offer-icon { width: 56px; height: 56px; font-size: 22px; }
 
@@ -1477,3 +1483,17 @@ img, svg, a { -webkit-user-drag: none; }
   .award-card { padding: 12px 18px; }
   .award-card h4 { margin-bottom: 6px; }
 }
+
+/* Tagline beside the logo: reads "Kiwrious makes invisible science visible". */
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-tagline {
+  padding-top: 4px;
+  color: rgba(255,255,255,0.72);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  transition: font-size 0.3s;
+}
+.nav.scrolled .nav-tagline { font-size: 14px; }
+@media (max-width: 900px) { .nav-tagline { display: none; } }
