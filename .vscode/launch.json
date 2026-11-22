@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Serve www2 (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:4719/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Serve www2 (http-server)"
+    }
+  ]
+}

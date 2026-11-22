@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve www2 (http-server)",
+      "type": "shell",
+      "command": "npx --yes http-server . -p 4719 -a 127.0.0.1 -c-1",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "pattern": [
+            { "regexp": ".", "file": 1, "location": 2, "message": 3 }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Starting up http-server",
+            "endsPattern": "Available on:"
+          }
+        }
+      ],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Serve www2 (Python)",
+      "type": "shell",
+      "command": "python3 -m http.server 4719 --bind 127.0.0.1",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
